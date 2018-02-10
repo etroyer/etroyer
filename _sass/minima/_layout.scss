@@ -17,7 +17,7 @@
   }
   @include media-query($on-tablet-p) {
     background-color: Yellow;
-    min-height: 800px;
+    min-height: 770px;
     height:100vh;
   }
   @include media-query($on-tablet-h) {
@@ -41,18 +41,83 @@
 
 .site-nav {
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+}
 
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
+.site-nav a {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 17px;
+  color: rgba(0,0,0,.5);
+  letter-spacing: 2px;
+  margin: 0;
+  display: inline-block;
+  padding: 15px 0;
+  text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  margin-left: 30px;
+}
+.hero-title {
+  transform: translateY(0);
+	-webkit-transform: translateY(0);
+	position: static;
+	text-align: center;
+	max-width: 520px;
+	margin: auto;
+	width: auto;
+	padding: 140px 40px 50px 40px;
+  line-height: 24px;
+  font-size: 14px;
+  @include media-query($on-palm) {
 
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+  }
+  @include media-query($on-tablet-p) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 40px;
+    width: 350px;
+    opacity: 0.9;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 0.47px;
+    line-height: 30px;
+    text-align: left;
+    z-index: 1;
+    padding: 0px;
+  }
+  @include media-query($on-tablet-h) {
+    left: 100px;
+  }
+  @include media-query($on-laptop) {
+
   }
 }
+.hero-image {
+  position: static;
+	margin: auto;
+	width: 50%;
+  max-width: 400px;
+	display: block;
+  @include media-query($on-palm) {
+
+  }
+  @include media-query($on-tablet-p) {
+    position: absolute;
+  	right: 15%;
+  	bottom: 0;
+  	width: 400px;
+  }
+  @include media-query($on-tablet-h) {
+
+  }
+  @include media-query($on-laptop) {
+
+  }
+}
+
+
 
 /**
  * Page content
