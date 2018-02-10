@@ -1,12 +1,15 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /resume
 ---
 
-Something goes here.
-
-{% for learning in site.data.learnings %}
-  <h2>{{ learning.learning }}</h2>
-  <p>{{ learning.description }}</p>
+<h2>Experience</h2>
+{% for experience in site.data.experiences %}
+  <h3>{{ experience.role }}</h3>
+  <h4>{{ experience.date }}</h4>
+  <p>{{ experience.highlights }}</p>
 {% endfor %}
+
+<h2>Education</h2>
+<h2>Skills</h2>
