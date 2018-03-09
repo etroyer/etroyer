@@ -3,9 +3,8 @@
 // Define defaults for each variable.
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$base-font-size:   14px !default;
+$base-font-weight: 200 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
@@ -39,13 +38,12 @@ $on-laptop:        1800px !default;
   }
 }
 
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
+// @mixin relative-font-size($ratio) {
+//   font-size: $base-font-size * $ratio;
+// }
 
 // Import partials.
 @import
   "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/layout"
 ;
